@@ -14,17 +14,4 @@ public class SumCalculator {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        int result = 0;
-        for (int i = 1; i < 100000; i++) {
-            result = new SumCalculator().sum(i);
-
-            if(result < 0){
-                System.out.println(i);
-                break;
-            }
-        }
-        System.out.println(result);
-    }
 }
